@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react'
 const UseRef = () => {
     const bef=useRef(null);
     
+    console.log(bef.current);
     useEffect(()=>{
         console.log(bef.current);
     })

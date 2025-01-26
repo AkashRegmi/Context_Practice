@@ -31,13 +31,16 @@
 
 // export default App;
 
-import React, { useRef } from 'react';
+import React, { useRef} from 'react';
 import UseRef from "./component/UseRef";
+import PreviousState from './component/UseRef2';
+import Example from './component/UseRef2';
+
 
 function App() {
   
   return (
-    <UseRef/>
+    <Example/>
   );
 }
 
