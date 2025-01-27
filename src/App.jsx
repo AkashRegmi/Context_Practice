@@ -32,15 +32,14 @@
 // export default App;
 
 import React, { useRef} from 'react';
-import UseRef from "./component/UseRef";
-import PreviousState from './component/UseRef2';
-import Example from './component/UseRef2';
+
+import Counter from './component/UseReducer';
 
 
 function App() {
   
   return (
-    <Example/>
+    <Counter/>
   );
 }
 
