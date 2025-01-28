@@ -31,15 +31,29 @@
 
 // export default App;
 
-import React, { useRef} from 'react';
+import React, { useCallback, useRef, useState} from 'react';
 
 import Counter from './component/UseReducer';
+import UseCallbackComponent from './component/UseCallbackComponent';
 
 
 function App() {
-  
+  const [state,setState]=useState(0)
+  const handleIncrement=useCallback(()=>{
+    setState(state+1 )
+  },[state]);
   return (
-    <Counter/>
+    <>
+    <div> COUNT: {state}</div> <br/>
+    <button onClick={handleIncrement}>Increment</button>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <UseCallbackComponent buttonname="click me2"
+    handleIncrement={handleIncrement}/>
+    
+    </>
   );
 }
 
